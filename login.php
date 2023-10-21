@@ -9,7 +9,6 @@ if (isset($_POST['login'])) {
     include('login_handler.php');
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,7 +25,6 @@ if (isset($_POST['login'])) {
     <div class="form-bg">
         <div class="container">
             <h1 class="app-title">Task Tracker</h1>
-
             <div class="row">
                 <div class="col-md-offset-3 col-md-6">
                     <form class="form-horizontal" action="login.php" method="post">
@@ -51,5 +49,4 @@ if (isset($_POST['login'])) {
         </div>
     </div>
 </body>
-
 </html>
