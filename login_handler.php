@@ -1,4 +1,5 @@
 <?php
+session_start();
 if (isset($_POST['login'])) {
     include('db.php'); // File koneksi database
     $username = $_POST['username'];
