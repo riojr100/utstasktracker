@@ -23,11 +23,11 @@ if (isset($_POST['register'])) {
     <?php
     } else {
     ?>
-        <form action="register.php" id="regForm" method="POST">
+        <form action="register.php" id="regFail" method="POST">
             <input type="hidden" name="unmatched" value="">
         </form>
         <script>
-            document.getElementById("regForm").submit()
+            document.getElementById("regFail").submit()
         </script>
 <?php
         echo "Pass doesn't match";

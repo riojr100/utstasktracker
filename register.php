@@ -26,18 +26,18 @@
                 ?>
 
                 <div class="col-md-offset-3 col-md-6">
-                    <form class="form-horizontal" action="register.php" method="post">
+                    <form class="form-horizontal" action="register_handler.php" method="post">
                         <span class="heading">Registration</span>
                         <div class="form-group">
-                            <input type="text" name="username" class="form-control" id="form-control" placeholder="Username">
+                            <input type="text" name="username" class="form-control" id="form-control" placeholder="Username" required>
                             <i class="fa fa-user"></i>
                         </div>
                         <div class="form-group">
-                            <input type="password" name="password" class="form-control" id="form-control" placeholder="Password">
+                            <input type="password" name="password" class="form-control" id="form-control" placeholder="Password" required>
                             <i class="fa fa-lock"></i>
                         </div>
                         <div class="form-group">
-                            <input type="password" name="passwordConfirm" class="form-control" id="" placeholder="Confirm Password">
+                            <input type="password" name="passwordConfirm" class="form-control" id="" placeholder="Confirm Password" required>
                             <i class="fa fa-key"></i>
                         </div>
                         <div class="form-group">
