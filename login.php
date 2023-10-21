@@ -42,7 +42,7 @@ if (isset($_POST['login'])) {
                             <p>Don't have an account? <a href="register.php">Register here!</a></p>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-default">Log In</button>
+                            <button type="submit" name="login" value="login" class="btn btn-default">Log In</button>
                         </div>
                     </form>
                 </div>
