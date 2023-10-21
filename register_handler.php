@@ -15,7 +15,7 @@ if (isset($_POST['register'])) {
         $stmt->execute();
 ?>
         <form action="login.php" id="regForm" method="POST">
-            <input type="hidden" name="registerSuccess" value="yes">
+            <input type="hidden" name="registerSuccess" value="">
         </form>
         <script>
             document.getElementById("regForm").submit()
@@ -23,8 +23,8 @@ if (isset($_POST['register'])) {
     <?php
     } else {
     ?>
-        <form action="login.php" id="regForm" method="POST">
-            <input type="hidden" name="registerSuccess" value="no">
+        <form action="register.php" id="regForm" method="POST">
+            <input type="hidden" name="unmatched" value="">
         </form>
         <script>
             document.getElementById("regForm").submit()

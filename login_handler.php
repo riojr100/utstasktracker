@@ -28,9 +28,34 @@ if (isset($_POST['login'])) {
                 $_SESSION['user_id'] = $row['id'];
                 header("Location: index.php");
             } else {
-                $login_error = "Login failed. Please check your login information again.";
+?>
+                <form action="login.php" id="regForm" method="POST">
+                    <input type="hidden" name="loginFailed" value="">
+                </form>
+                <script>
+                    document.getElementById("regForm").submit()
+                </script>
+            <?php
             }
+        } else {
+            ?>
+            <form action="login.php" id="regForm" method="POST">
+                <input type="hidden" name="loginFailed" value="">
+            </form>
+            <script>
+                document.getElementById("regForm").submit()
+            </script>
+        <?php
         }
+    } else {
+        ?>
+        <form action="login.php" id="regForm" method="POST">
+            <input type="hidden" name="loginFailed" value="">
+        </form>
+        <script>
+            document.getElementById("regForm").submit()
+        </script>
+<?php
     }
 } else {
     header("Location: login.php");
