@@ -1,8 +1,7 @@
-/*Login Form*/
+/* Login and Registration Form */
 
-.body-login{
+.body-login-register{
     background: #1f2983;
-    display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
@@ -77,7 +76,7 @@
 }
 
 .form-horizontal .btn{
-    float: right;
+    float: center;
     font-size: 14px;
     color: #fff;
     background: #a15c23;
@@ -104,4 +103,4 @@
     }
 }
 
-/*End Login Form*/
+/* End Login and Registration Form */
