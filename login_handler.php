@@ -17,7 +17,7 @@ if (isset($_POST['login'])) {
     if ($res->num_rows == 1) {
         if (password_verify($password, $assoc['password'])) {
             $id = $assoc['id'];
-            $sql = "SELECT id, role, username FROM users WHERE id=?";
+            $sql = "SELECT id, username FROM users WHERE id=?";
             $stmt = $conn->prepare($sql);
             $stmt->bind_param("i", $id);
             $stmt->execute();
@@ -26,7 +26,6 @@ if (isset($_POST['login'])) {
                 $row = $result->fetch_assoc();
                 $_SESSION['username'] = $row['username'];
                 $_SESSION['user_id'] = $row['id'];
-                $_SESSION['role'] = $row['role'];
                 header("Location: index.php");
             } else {
                 $login_error = "Login failed. Please check your login information again.";
