@@ -138,7 +138,6 @@ if (!isset($_SESSION['user_id'])) {
     </div>
     <script>
         function submitDone(id) {
-            console.log(id);
             document.getElementById('doneForm' + id).submit();
         }
 
