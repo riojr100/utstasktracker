@@ -81,7 +81,7 @@ if (isset($_SESSION['user_id'])) {
             $stmt->execute();
             header("location:index.php");
         } else {
-            echo ("no.");
+            echo ("lol kamu hacker");
         }
     } elseif (isset($_POST['delete'])) {
         $taskId = $_POST['taskId'];
@@ -92,7 +92,7 @@ if (isset($_SESSION['user_id'])) {
             $stmt->execute();
             header("location:index.php");
         } else {
-            echo ("no.");
+            echo ("lol kamu hacker");
         }
     } else {
         header("location:index.php");
