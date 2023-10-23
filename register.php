@@ -18,7 +18,7 @@
 
                 <?php
                 if (isset($_POST['unmatched'])) { ?>
-                    <div class="alert alert-danger" role="alert">
+                    <div class="alert alert-danger" role="alert" id="unmatchedPass">
                         Password and Confirm Password do not match
                     </div>
                 <?php

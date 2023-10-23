@@ -40,7 +40,7 @@ if (isset($_POST['login'])) {
                 <?php
                 if (isset($_POST['registerSuccess'])) {
                 ?>
-                    <div class="alert alert-success" role="alert">
+                    <div class="alert alert-success" role="alert" id="successRegister">
                         Your Registration Was Successful!
                     </div>
                 <?php

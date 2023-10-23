@@ -22,6 +22,16 @@
   animation-iteration-count: 1;
 }
 
+#unmatchedPass {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
+#successRegister {
+  animation: shake 0.5s;
+  animation-iteration-count: 1;
+}
+
 .body-login-register {
   background: #1f2983;
   align-items: center;
