@@ -91,7 +91,16 @@ if (!isset($_SESSION['user_id'])) {
 
                                 <th><?= $i ?></th>
                                 <td>
-                                    <?= $row['task_name'] ?>
+                                    <?php
+                                    if ($row['status'] == "done") {
+                                    ?>
+                                        <p><strike><?= $row['task_name'] ?></strike></p>
+                                    <?php
+                                    } else { ?>
+                                        <p><?= $row['task_name'] ?></p>
+                                    <?php
+                                    }
+                                    ?>
                                 </td>
                                 <td><?= $row['task_detail'] ?></td>
                                 <td>
